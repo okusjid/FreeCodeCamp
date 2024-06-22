@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon - Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="/Pokemon/script.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <h1 id="h1">Pokemon Tracker</h1>
+        <div id="search">
+            <input id="search-tracker" placeholder="Pokemon Name or ID">
+            <button id="search-btn">Go</button>
+        </div>
+        <div id="Piku">
+            <div id="Pokemon">
+                <image id="image" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" alt="Pokemon Image">
+            </div>
+          
+            <div id="sort">
+                <select id="sort-tracker">
+                    <option value="id">ID</option>
+                    <option value="name">Name</option>
+                    <option value="height">Height</option>
+                    <option value="weight">Weight</option>
+                    <option value="base_experience">Base Experience</option>
+                </select>
+                <button id="sort-btn">Sort</button>
+            </div>
+            <div id="delete">
+                <button id="delete-btn">Delete All</button>
+            </div>
+        </div>
+
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Height</th>
+                    <th>Weight</th>
+                    <th>Base Experience</th>
+                </tr>
+            </thead>
+            <tbody id="records">
+            </tbody>
+
+        </table>
+
+    </div>
+
+</body>
+
+</html>

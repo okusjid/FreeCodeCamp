@@ -1,0 +1,86 @@
+body {
+    font-family: 'Arial', sans-serif; /* Updated for consistent font usage */
+    margin: 2px;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+#search, #search-tracker, #sort, #delete, #Pokemon, #piku {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto; /* Centering and consistent vertical spacing */
+    border: 1px solid #ccc; /* Lighter border */
+    border-radius: 10px; /* More pronounced rounded corners */
+    width: 80%;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
+    transition: box-shadow 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+#search:hover, #search-tracker:hover, #sort:hover, #delete:hover, #Pokemon:hover, #piku:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* Deeper shadow on hover */
+}
+
+#search-btn, #sort-btn, #delete-btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5%;
+    padding: 10px 15px;
+    cursor: pointer;
+    width: 120px; /* Slightly wider buttons */
+    transition: background-color 0.3s; /* Smooth background color transition on hover */
+}
+
+#search-btn:hover, #sort-btn:hover, #delete-btn:hover {
+    background-color: #555; /* Darker on hover */
+}
+
+#table {
+    width: 90%; /* Slightly wider table */
+    margin: 20px auto; /* Centered horizontally */
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#table th {
+    background-color: #333;
+    color: white;
+}
+
+#table td, #table th {
+    border: 1px solid #ccc; /* Lighter borders within the table */
+    padding: 8px;
+    text-align: center;
+}
+
+#table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#name1 {
+    text-transform: capitalize;
+}
+
+#sort, #delete {
+    width: auto; /* Auto width based on content */
+    margin-left: 50px; /* More reasonable margin */
+    padding: 15px; /* More padding for better spacing */
+    gap: 10px; /* Reduced gap for tighter grouping */
+}
+
+#delete-btn {
+    width: 150px; /* Adjusted width */
+}
+
+#sort-tracker, #delete-tracker, #Pokemon, #piku {
+    width: 50%; /* Consistent width for inputs */
+}
+
